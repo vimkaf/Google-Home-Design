@@ -1,0 +1,276 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #202124;
+    margin:0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    gap:20px;
+}
+
+.left a{
+    text-decoration: none;
+    color:white;
+}
+
+.left a.active{
+    text-align: center;
+    width:20%;
+}
+
+.horizontalbar{
+    width:30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+    
+}
+
+.horizontalbar span{
+    width:100%;
+    height: inherit;
+    background-color: #ffffff;
+    border-radius:8px ;
+}
+
+.right{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center ;
+    gap:15px;
+
+
+}
+
+.right img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.profileavatar{
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    background-image: conic-gradient(#f6ad01,#e92d18, #24913f, #3174f1);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    background-image: url("images/user.jpeg");
+    border:3px solid #202124;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+main{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.logo{
+    margin-top:20px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchinput{
+    min-width: 90%;
+    height: 34px;
+    position: relative;
+}
+
+.searchinput input{
+    width: 100%;
+    height: inherit;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    border:1px solid #8b9095;
+    border-radius: 20px;
+    padding:20px 50px 20px 35px;
+    color: #e8eaed;
+}
+
+.icons{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.camera, .mic, .magnifier{
+    position: absolute;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+
+}
+.magnifier{
+    left:10px;
+    fill:#9aa0a6;
+}
+
+.mic{
+    right:10px;
+}
+
+.camera{
+    right:40px;
+}
+
+.links{
+    color:#8b9095;
+    text-align: center;
+}
+
+.lang{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin:10px 0;
+}
+.lang a{
+    color:#89b3f6;
+    text-decoration: none;
+    font-size: small;
+}
+
+.trending{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.trending .icon{
+    width: 24px;
+    height: 24px;
+    color:#ffffff;
+}
+
+.trending .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.trending .title h3{
+    margin:0;
+    color:white;
+}
+
+.trending .searches div.trendingsearch{
+    width: 90%;
+    border-bottom:1px solid #dadce0;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    padding: 10px;
+    margin:0 auto;
+}
+div.trendingsearch .left{
+    display: flex;
+    gap:10px;
+}
+div.trendingsearch .left p{
+    color:#9aa0a6;
+    margin:0;
+}
+div.trendingsearch .right{
+    width: 40px;
+    height:40px;
+    border-radius: 10px;
+    background: white;
+}
+
+.trending .searches a{
+    text-decoration: none;
+    color:#8b9095;
+    font-weight: bolder;
+}
+.trending .search img{
+    color:#8b9095;
+}
+
+footer{
+    width: 100%;
+    font-size:15px;
+    background-color: #171717;
+    color: #70757a;
+}
+
+.footer-top{
+    padding:15px;
+    text-align: left;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.footer-bottom > nav > ul{
+    display: flex;
+    align-items: flex-start;    
+    gap:15px;
+}
+.footer-bottom > nav > ul > li{
+    list-style: none;
+}
+
+.footer-bottom > nav > ul > li > a{
+    text-decoration: none;
+    color: #70757a;
+
+}
+
+@media screen and (min-width:769px){
+    .searchinput{
+        min-width: 60%;
+    }
+}
